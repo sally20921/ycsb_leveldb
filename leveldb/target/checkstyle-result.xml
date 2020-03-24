@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.0">
+<file name="/home/sally20921/temp/ycsb_leveldb/leveldb/src/main/java/com/yahoo/ycsb/db/LevelDBClient.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="11" column="8" severity="error" message="Unused import - java.io.ByteArrayInputStream." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="12" column="8" severity="error" message="Unused import - java.io.ObjectInputStream." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="26" column="8" severity="error" message="Unused import - java.util.IllegalFormatException." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="31" column="8" severity="error" message="Unused import - org.iq80.leveldb.WriteOptions." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="35" column="15" severity="error" message="Unused import - org.fusesource.leveldbjni.JniDBFactory.asString." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="40" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="50" column="25" severity="error" message="Name &apos;DELIMITER&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
+<error line="51" column="25" severity="error" message="Name &apos;TOMBSTONE&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
+<error line="53" column="25" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="54" severity="error" message="method def child at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="54" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="58" column="42" severity="error" message="Array brackets at illegal position." source="com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"/>
+<error line="62" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="63" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="64" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="65" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="69" column="23" severity="error" message="Name &apos;DEBUG&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="69" column="29" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="70" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="70" severity="error" message="if at indentation level 6 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="73" column="25" severity="error" message="Name &apos;__serialize__&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="79" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="80" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="81" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="82" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="83" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="95" severity="error" message="method def return type at indentation level 8 not at correct indentation, 2" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="95" column="39" severity="error" message="Name &apos;__deserialize__&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="96" severity="error" message="method def throws at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="108" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="109" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="113" severity="error" message="for at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="114" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="115" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="116" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="117" severity="error" message="for rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="129" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="130" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="131" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="132" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="133" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="136" column="11" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="141" severity="error" message="method def throws at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="144" column="29" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="148" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="149" severity="error" message="for child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="153" severity="error" message="for at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="154" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="155" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="156" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="157" severity="error" message="for rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="168" severity="error" message="&apos;for&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="174" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="178" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="181" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="183" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="185" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="187" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="193" column="11" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="194" column="11" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="195" column="11" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="196" column="11" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="197" column="11" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="198" column="11" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="209" severity="error" message="if child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="210" severity="error" message="if child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="211" severity="error" message="while at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="212" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="213" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="213" column="39" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="214" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="215" severity="error" message="while rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="228" column="31" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="237" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="238" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="238" column="35" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="239" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="240" severity="error" message="while child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="242" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="242" severity="error" message="if at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="244" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="245" severity="error" message="while child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="246" severity="error" message="while child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="248" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="248" severity="error" message="if at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="249" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="260" column="22" severity="error" message="Name &apos;_readRm&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="264" severity="error" message="if at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="266" severity="error" message="if child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="267" severity="error" message="if child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="268" severity="error" message="while at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="269" severity="error" message="while child at indentation level 16 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="270" severity="error" message="while child at indentation level 16 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="270" column="43" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="271" severity="error" message="while child at indentation level 16 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="276" severity="error" message="Line is longer than 80 characters." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="276" severity="error" message="while child at indentation level 16 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="277" severity="error" message="for at indentation level 16 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="278" severity="error" message="for child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="279" severity="error" message="for child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="279" column="27" severity="error" message="Array brackets at illegal position." source="com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"/>
+<error line="280" severity="error" message="Line is longer than 80 characters." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="282" severity="error" message="for child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="283" severity="error" message="for rcurly at indentation level 16 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="285" severity="error" message="while child at indentation level 20 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="287" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="287" severity="error" message="if at indentation level 20 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="288" severity="error" message="while rcurly at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="289" severity="error" message="if rcurly at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="290" severity="error" message="else child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="291" severity="error" message="if at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="293" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="293" column="31" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="294" severity="error" message="if rcurly at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="296" severity="error" message="else child at indentation level 20 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="297" severity="error" message="while at indentation level 20 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="298" severity="error" message="while child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="299" severity="error" message="while child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="300" severity="error" message="while child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="300" column="27" severity="error" message="Array brackets at illegal position." source="com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"/>
+<error line="301" severity="error" message="while child at indentation level 24 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="302" severity="error" message="while child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="303" severity="error" message="while rcurly at indentation level 20 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="304" severity="error" message="else rcurly at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="305" severity="error" message="else rcurly at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="306" severity="error" message="method def child at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="311" severity="error" message="method def child at indentation level 12 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="312" severity="error" message="method def child at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="313" severity="error" message="method def child at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="314" severity="error" message="method def child at indentation level 12 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="315" severity="error" message="method def child at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="322" severity="error" message="if at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="325" severity="error" message="if child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="326" severity="error" message="if child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="327" severity="error" message="for at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="328" severity="error" message="for child at indentation level 20 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="329" severity="error" message="for child at indentation level 20 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="330" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="330" column="22" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="331" severity="error" message="for child at indentation level 20 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="332" severity="error" message="for rcurly at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="333" severity="error" message="if rcurly at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="334" severity="error" message="else child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="336" severity="error" message="else child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="337" severity="error" message="else child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="337" column="15" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="339" severity="error" message="for at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="340" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="340" column="35" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="341" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="341" column="23" severity="error" message="Array brackets at illegal position." source="com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"/>
+<error line="342" severity="error" message="for child at indentation level 20 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="343" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="344" severity="error" message="for rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="345" severity="error" message="else child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="345" column="15" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="346" severity="error" message="else rcurly at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="347" severity="error" message="method def child at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="348" severity="error" message="method def child at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="353" severity="error" message="method def throws at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="356" severity="error" message="if child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="357" severity="error" message="if child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="358" severity="error" message="while at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="359" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="360" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="361" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="362" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="362" column="43" severity="error" message="Name &apos;res_trimmed&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
+<error line="363" severity="error" message="if at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="364" severity="error" message="if child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="365" severity="error" message="while at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="366" severity="error" message="while child at indentation level 20 not at correct indentation, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="367" severity="error" message="for at indentation level 20 not at correct indentation, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="368" severity="error" message="if at indentation level 24 not at correct indentation, 14" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="369" severity="error" message="if child at indentation level 28 not at correct indentation, 16" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="370" severity="error" message="if child at indentation level 28 not at correct indentation, 16" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="371" severity="error" message="if rcurly at indentation level 24 not at correct indentation, 14" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="372" severity="error" message="for rcurly at indentation level 20 not at correct indentation, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="373" severity="error" message="while rcurly at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="374" severity="error" message="if child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="375" severity="error" message="if rcurly at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="376" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="376" column="35" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="378" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="379" severity="error" message="while rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="380" severity="error" message="if child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="382" severity="error" message="else child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="382" column="19" severity="error" message="Array brackets at illegal position." source="com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"/>
+<error line="383" severity="error" message="else child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="384" severity="error" message="else child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="385" severity="error" message="if at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="386" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="387" severity="error" message="while at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="388" severity="error" message="while child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="389" severity="error" message="while child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="390" severity="error" message="while rcurly at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="391" severity="error" message="if rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="405" column="11" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="412" severity="error" message="if child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="413" severity="error" message="for at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="414" severity="error" message="for child at indentation level 16 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="415" severity="error" message="for rcurly at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="421" severity="error" message="if child at indentation level 16 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="421" column="23" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="422" severity="error" message="if child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="423" severity="error" message="if child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="424" severity="error" message="if child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="425" severity="error" message="while at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="426" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="427" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="427" column="38" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="428" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="429" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="430" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="431" severity="error" message="Line is longer than 80 characters." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="431" severity="error" message="while child at indentation level 16 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="432" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="433" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="434" severity="error" message="while rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="435" severity="error" message="try at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="436" severity="error" message="try child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="437" severity="error" message="try rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="438" severity="error" message="catch child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="439" severity="error" message="catch child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="440" severity="error" message="catch rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="441" severity="error" message="if child at indentation level 16 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="442" severity="error" message="&apos;while&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="442" severity="error" message="while at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="443" column="27" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="447" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="447" severity="error" message="if at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="449" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="449" severity="error" message="else at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="451" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="451" severity="error" message="else at indentation level 4 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="454" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="455" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="457" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="458" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="463" severity="error" message="Line is longer than 80 characters." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="467" severity="error" message="if at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="468" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="469" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="470" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="471" severity="error" message="if rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="473" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="474" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="478" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="479" severity="error" message="for at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="480" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="481" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="482" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="483" severity="error" message="if at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="484" severity="error" message="if child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="485" severity="error" message="if at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="485" column="22" severity="error" message="&apos;!&apos; is followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"/>
+<error line="486" severity="error" message="if child at indentation level 24 not at correct indentation, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="487" severity="error" message="if child at indentation level 20 not at correct indentation, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="488" severity="error" message="if rcurly at indentation level 20 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="489" severity="error" message="if rcurly at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="490" severity="error" message="else child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="491" severity="error" message="if at indentation level 20 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="491" column="26" severity="error" message="&apos;!&apos; is followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"/>
+<error line="492" severity="error" message="if child at indentation level 24 not at correct indentation, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="493" severity="error" message="if child at indentation level 20 not at correct indentation, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="494" severity="error" message="if rcurly at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="495" severity="error" message="else rcurly at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="497" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="498" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="498" severity="error" message="if at indentation level 16 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="500" severity="error" message="for rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="501" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="502" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="503" severity="error" message="try rcurly at indentation level 6 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="504" severity="error" message="catch child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="505" severity="error" message="catch child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="506" severity="error" message="catch rcurly at indentation level 6 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="507" severity="error" message="catch child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="508" severity="error" message="catch child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="509" severity="error" message="catch rcurly at indentation level 6 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="513" column="15" severity="error" message="Name &apos;_deleteRm_&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="515" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="516" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="517" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="518" severity="error" message="while at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="519" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="520" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="520" column="30" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="521" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="522" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="523" severity="error" message="if at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="524" severity="error" message="if child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="524" column="23" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="525" severity="error" message="if child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="526" severity="error" message="if rcurly at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="527" severity="error" message="else child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="528" severity="error" message="else rcurly at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="529" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="530" severity="error" message="while rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="532" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="533" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="540" severity="error" message="&apos;for&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="544" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="545" severity="error" message="for at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="546" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="547" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="548" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="549" severity="error" message="for rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="550" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="552" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="553" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="560" severity="error" message="&apos;for&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="564" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="565" severity="error" message="for at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="566" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="567" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="568" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="569" severity="error" message="for rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="570" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="572" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="573" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="580" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="580" severity="error" message="if at indentation level 6 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="582" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="582" severity="error" message="else at indentation level 6 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="584" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="584" severity="error" message="else at indentation level 6 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="586" severity="error" message="method def child at indentation level 6 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="590" severity="error" message="Line is longer than 80 characters." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="593" severity="error" message="if at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="594" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="595" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="596" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="597" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="598" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="599" severity="error" message="if rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="601" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="602" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="606" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="607" severity="error" message="for at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="609" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="609" severity="error" message="if at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="611" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="611" severity="error" message="else at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="613" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="613" column="19" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="614" column="35" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="615" severity="error" message="for child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="616" severity="error" message="for rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="617" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="618" severity="error" message="try child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="620" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="621" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="626" column="15" severity="error" message="Name &apos;_scan&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="634" severity="error" message="method def child at indentation level 8 not at correct indentation, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="637" severity="error" message="if child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="638" severity="error" message="if child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="640" severity="error" message="else child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="645" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="646" column="15" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="650" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="651" severity="error" message="if at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="652" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="652" column="19" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="653" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="654" severity="error" message="if rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="655" severity="error" message="else child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="655" column="19" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="656" severity="error" message="else child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="657" severity="error" message="else rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="658" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="658" column="15" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="659" severity="error" message="if at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="659" column="14" severity="error" message="&apos;!&apos; is followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"/>
+<error line="660" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="661" severity="error" message="if rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="662" severity="error" message="if at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="664" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="665" severity="error" message="Line is longer than 80 characters." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="665" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="665" column="47" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="666" severity="error" message="if at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="667" severity="error" message="if child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="667" column="36" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="668" severity="error" message="if rcurly at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="673" severity="error" message="else child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="674" severity="error" message="else child at indentation level 16 not at correct indentation, 10" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="675" severity="error" message="else rcurly at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="676" severity="error" message="if rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="678" severity="error" message="else child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="679" severity="error" message="else rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="680" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="682" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="683" column="15" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="686" column="11" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="689" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="690" column="15" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="694" column="15" severity="error" message="Name &apos;_scanFr&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="702" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="703" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="705" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="705" column="15" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="706" severity="error" message="if at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="706" column="14" severity="error" message="&apos;!&apos; is followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"/>
+<error line="707" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="708" severity="error" message="if rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="709" severity="error" message="while child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="709" column="20" severity="error" message="&apos;--&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="729" severity="error" message="if child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="730" severity="error" message="for at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="731" severity="error" message="for child at indentation level 16 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="732" severity="error" message="for rcurly at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="738" severity="error" message="if child at indentation level 16 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="738" column="23" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="739" severity="error" message="if child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="740" severity="error" message="if child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="741" severity="error" message="if child at indentation level 12 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="742" severity="error" message="while at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="743" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="744" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="744" column="37" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="745" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="746" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="747" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="748" severity="error" message="Line is longer than 80 characters." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="748" severity="error" message="while child at indentation level 16 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="749" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="750" severity="error" message="while child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="751" severity="error" message="while rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="752" severity="error" message="try at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="753" severity="error" message="try child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="754" severity="error" message="try rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="755" severity="error" message="catch child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="756" severity="error" message="catch child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="757" severity="error" message="catch rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="759" severity="error" message="if child at indentation level 16 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="760" severity="error" message="&apos;while&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="760" severity="error" message="while at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="761" column="27" severity="error" message="&apos;(&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="766" severity="error" message="if at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="767" severity="error" message="if child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="768" severity="error" message="if rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="769" severity="error" message="else child at indentation level 12 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="770" severity="error" message="else rcurly at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="772" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="773" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="775" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="776" severity="error" message="catch child at indentation level 8 not at correct indentation, 6" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+</checkstyle>
